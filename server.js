@@ -12,7 +12,7 @@ app.use(express.json());
 
 //redirect to auth route when user hits the path
 app.use('/api/auth', require('./routes/auth'))
-
+app.use('/api/private', require('./routes/private'))
 //Error handler should be the final middleware
 
 app.use(errorHandler);
